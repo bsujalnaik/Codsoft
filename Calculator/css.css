@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 360px;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 20px;
+    text-align: right;
+    word-wrap: break-word;
+    min-height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.btn {
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:active {
+    background-color: #d9d9d9;
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: #f9a825;
+    color: #fff;
+}
+
+.operator:active {
+    background-color: #f57f17;
+}
+
+#clear {
+    background-color: #e57373;
+    color: #fff;
+}
+
+#clear:active {
+    background-color: #ef5350;
+}
+
+#equals {
+    background-color: #64b5f6;
+    color: #fff;
+    grid-column: span 4;
+}
+
+#equals:active {
+    background-color: #42a5f5;
+}
