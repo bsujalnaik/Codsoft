@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Create a New Quiz</h1>
+  </header>
+  <main>
+    <form id="quizForm">
+      <label for="quizTitle">Quiz Title:</label>
+      <input type="text" id="quizTitle" name="quizTitle" required>
+
+      <div id="questionsContainer">
+        <!-- Questions will be added here dynamically -->
+      </div>
+
+      <button type="button" onclick="addQuestion()">Add Question</button>
+      <button type="submit">Save Quiz</button>
+    </form>
+  </main>
+  <script src="Quiz Taking.js"></script>
+</body>
+</html>
